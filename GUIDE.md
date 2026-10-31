@@ -1,19 +1,17 @@
 # Taylor Made Budget
 
-A static, responsive envelope budget tracker inspired by Aspire Budgeting v4.0.
+Standalone app: https://stumpwizard.github.io/taylor-made-budget/
 
-## Start
-1. Open Settings and restore the private JSON import supplied in chat to load workbook categories, targets, and net-worth history. This file must never be committed to this repository.
-2. Add opening balances using a transaction of type Opening balance / adjustment. Enter card debt as a negative number.
-3. Use Move money to assign available funds to categories.
-4. Record expenses, income, refunds, and account transfers. Card payments are account transfers.
+No workbook or spreadsheet connection is required. Create and edit accounts and categories inside the app, record transactions, assign money to envelopes, and review reports.
 
-## Data and calculations
-All financial records remain in browser localStorage. No bank connection, cloud database, analytics, or automatic device sync. Export JSON backups regularly. Restoring a backup replaces the current browser data. Browser storage is not encrypted; use a trusted device and browser profile.
+## Getting started
+1. Open Accounts and edit the starter accounts or add bank and credit card accounts.
+2. Record opening balances using an opening balance / adjustment transaction. Use a negative balance for credit card debt.
+3. Customize categories and targets in Settings.
+4. Assign Available to budget to envelopes, then record spending.
 
-Amounts are calculated in integer cents. Envelope balances and overspending roll forward. Targets do not automatically assign money. Pending transactions affect budget and account totals. Reconciliation compares cleared records only; differences become adjustments. Income reports exclude transfers and adjustments. Net worth uses the latest manually recorded value for each named asset/debt through the selected month, independently from transaction accounts.
+## Installation and offline use
+Use Settings > Install / app instructions. Supported browsers can install the app to a home screen or desktop. Visit online once and wait for Settings to show offline use is ready. Offline data and calculations stay on the device. Future updates load when online.
 
-Monthly transaction CSV export is available. Net-worth history, category targets, account management, reconciliation, and twelve-month income/expense reports are included.
-
-## Hosting
-GitHub Pages serves index.html from the main branch root. Keep this repository and path stable to preserve the URL and browser data location. The public repository contains app code and generic starter categories only.
+## Your data
+Existing browser budgets are preserved. There is no bank connection or cloud sync. Export a JSON backup regularly from Settings; restore it on another browser or device. Clearing site data or removing browser storage may erase your budget. Keep backups private. Compatible older JSON backups remain supported.
